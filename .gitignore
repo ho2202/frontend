@@ -2,6 +2,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,react
 
+### image
+*.jpg
+*.png
+
 ### react ###
 .DS_*
 *.log
