@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* [target] {
+        text-decoration: none;
+      } */
+      [target="_blank"] {
+        text-decoration: none;
+      }
+      [title~="bonobono"] {
+        border: 5px solid green;
+      }
+      [class^="test"] {
+        background-color: salmon;
+      }
+      [class$="test"] {
+        background-color: magenta;
+      }
+      [class="test"] {
+        background-color: greenyellow;
+      }
+      [type*="button"] {
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 10px;
+      }
+      [type$="success"] {
+        color: green;
+      }
+      [type*="danger"] {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#" target="_blank">google</a></li>
+      <li><a href="#" target="_blank">naver</a></li>
+      <li><a href="#" target="_self">daum</a></li>
+    </ul>
+    <img src="../../image/bono.jpg" alt="" title="bonobono" />
+    <img src="../../image/bono.jpg" alt="" title="bono" />
+    <div class="testing">first div</div>
+    <div class="second test">second div</div>
+    <div class="test">third div</div>
+    <button type="button-success">Success</button>
+    <button type="button-danger">Danger</button>
+    <button>Normal</button>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>상품 주문서</h1>
+    <form action="">
+      <fieldset>
+        <legend>개인정보</legend>
+        <ul>
+          <li>
+            <label for="name">이름</label> <input type="text" name="name" placeholder="여백 없이 입력" required />
+          </li>
+          <li>
+            <label for="phone">연락처</label> <input type="text" name="phone" placeholder="연락 가능한 번호" required />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>배송지 정보</legend>
+        <ul>
+          <li><label for="addr">주소</label><input type="text" id="addr" size="40" /></li>
+          <li><label for="tel">전화번호</label><input type="tel" id="tel" size="20" /></li>
+          <li><label for="memo">메모</label><textarea name="memo" id="memo" cols="50" rows="4"></textarea></li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>주문 정보</legend>
+        <ul>
+          <li>
+            <input type="checkbox" id="guatemala" /><label for="guatemala">과테말라 안티구아 (100g)</label>
+            <input type="number" name="" id="guatemala" max="99" min="1" />개
+          </li>
+          <li>
+            <input type="checkbox" id="indonesia" /><label for="indonesia">인도네시아 만델링 (100g)</label>
+            <input type="number" name="" id="indonesia" max="99" min="1" />개
+          </li>
+          <li>
+            <input type="checkbox" id="tam" /><label for="tam">탐라는도다(블렌딩) (100g)</label>
+            <input type="number" name="" id="" max="99" min="1" />개
+          </li>
+        </ul>
+      </fieldset>
+      <input type="submit" value="주문하기" />
+      <input type="reset" value="다시작성" />
+      <button type="reset">reset</button>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
