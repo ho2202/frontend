@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: gray;
+      }
+      .box {
+        background-color: white;
+      }
+      .left {
+        float: left;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box clearfix">
+      <img src="../../images/left-arrow.png" alt="왼쪽" class="left" />
+      <p>Test</p>
+    </div>
+    <div>float 해제</div>
+  </body>
+</html>
