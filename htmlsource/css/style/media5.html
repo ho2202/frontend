@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* body: #33338, 글자 #444 
+        container: flex
+        sidebar : 바깥여백 10 안쪽여백 6, #eee 
+        panel : 바깥여백 10 안쪽여백 20, #fff */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #333338;
+        color: #444;
+      }
+      .container {
+        display: flex;
+      }
+      div > aside {
+        margin: 10px;
+        padding: 6px;
+        background-color: #eee;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .panel {
+        margin: 10px;
+        padding: 20px;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat odio cum porro quam expedita qui, quidem
+            tempore amet at? Officia aut et odio commodi possimus tempore voluptas vero voluptates hic!
+          </p>
+          <img src="../../images/1.jpg" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ducimus velit! Dolorem perspiciatis
+            reiciendis minima voluptate eos assumenda magni suscipit, blanditiis labore quia beatae aspernatur qui.
+            Omnis aliquam at nemo quae quia adipisci suscipit expedita non. Aut dicta vel recusandae placeat ducimus
+            suscipit consequatur maxime corporis, velit nisi! Deleniti, aliquid.
+          </p>
+          <h3>Subtitle</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium alias recusandae culpa
+            obcaecati adipisci, at officia quia laborum soluta dolore neque praesentium? Aliquid fugit debitis atque
+            pariatur placeat expedita quidem consequuntur, libero maiores accusantium nemo voluptate cum soluta quia?
+            Eaque voluptatem voluptatibus nihil veritatis quisquam, et cupiditate dolor magnam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium alias recusandae culpa
+            obcaecati adipisci, at officia quia laborum soluta dolore neque praesentium? Aliquid fugit debitis atque
+            pariatur placeat expedita quidem consequuntur, libero maiores accusantium nemo voluptate cum soluta quia?
+            Eaque voluptatem voluptatibus nihil veritatis quisquam, et cupiditate dolor magnam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium alias recusandae culpa
+            obcaecati adipisci, at officia quia laborum soluta dolore neque praesentium? Aliquid fugit debitis atque
+            pariatur placeat expedita quidem consequuntur, libero maiores accusantium nemo voluptate cum soluta quia?
+            Eaque voluptatem voluptatibus nihil veritatis quisquam, et cupiditate dolor magnam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium alias recusandae culpa
+            obcaecati adipisci, at officia quia laborum soluta dolore neque praesentium? Aliquid fugit debitis atque
+            pariatur placeat expedita quidem consequuntur, libero maiores accusantium nemo voluptate cum soluta quia?
+            Eaque voluptatem voluptatibus nihil veritatis quisquam, et cupiditate dolor magnam.
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sint illo fugit consequatur iure ipsam alias
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sint illo fugit consequatur iure ipsam alias
+            fuga? Sunt perferendis, expedita ad nihil inventore id, aliquam assumenda quas nam provident similique?
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sint illo fugit consequatur iure ipsam alias
+            fuga? Sunt perferendis, expedita ad nihil inventore id, aliquam assumenda quas nam provident similique?
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sint illo fugit consequatur iure ipsam alias
+            fuga? Sunt perferendis, expedita ad nihil inventore id, aliquam assumenda quas nam provident similique?
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

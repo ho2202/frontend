@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 여백 0 body 배경 #ecf0f1
+      .wrapper: max-width: 60rem, width:100%
+      .flexbg: flex 컨테이너
+      main: 흰색, 안쪽여백 25 */
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #ecf0f1;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 60rem;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background-color: #fff;
+        padding: 25px;
+        order: 2;
+      }
+      .sidebar {
+        /* position: relative; */
+        padding: 25px;
+        width: 20%;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: #3498db;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: #34495e;
+      }
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          order: 1;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+        .sidebar {
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          ipsum, dolor sit amet consectetur adipisicing elit. Id recusandae impedit repellendus eum dolorum laboriosam.
+          Illo sed unde inventore magnam quibusdam, cumque deserunt doloremque. Reiciendis sequi amet officiis ad
+          quaerat numquam dolor sit at ratione debitis odit nihil fugit obcaecati eos, illum exercitationem et illo.
+          Quibusdam ea omnis quia deleniti sequi atque laboriosam aspernatur, blanditiis corrupti vero, itaque dolor.
+          Cum doloribus quam ad consequatur veritatis labore numquam quaerat nam provident quis quia voluptate nemo
+          architecto tempora, necessitatibus dolorem a itaque, ab consequuntur consectetur ipsum? Amet necessitatibus
+          quisquam eveniet animi nam, reiciendis asperiores sunt perspiciatis obcaecati deleniti odio consectetur. Quo,
+          laborum!
+        </p>
+        <p>
+          ipsum, dolor sit amet consectetur adipisicing elit. Id recusandae impedit repellendus eum dolorum laboriosam.
+          Illo sed unde inventore magnam quibusdam, cumque deserunt doloremque. Reiciendis sequi amet officiis ad
+          quaerat numquam dolor sit at ratione debitis odit nihil fugit obcaecati eos, illum exercitationem et illo.
+          Quibusdam ea omnis quia deleniti sequi atque laboriosam aspernatur, blanditiis corrupti vero, itaque dolor.
+          Cum doloribus quam ad consequatur veritatis labore numquam quaerat nam provident quis quia voluptate nemo
+          architecto tempora, necessitatibus dolorem a itaque, ab consequuntur consectetur ipsum? Amet necessitatibus
+          quisquam eveniet animi nam, reiciendis asperiores sunt perspiciatis obcaecati deleniti odio consectetur. Quo,
+          laborum!
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>You might have some lastest posts here on the left</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>And some other widgets here on the right</p>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* border 까지 크기 포함
+        컬럼: #ㅁㅁㅁ, #bbb, #ccc, #ddd, 내부공백20 width:25%
+        .row flex 
+        max-width: 992이하 2x2, 600이하는 1x4*/
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        display: flex;
+      }
+      .row .column {
+        padding: 20px;
+        width: 25%;
+      }
+      .row .column:nth-child(1) {
+        background-color: #aaa;
+      }
+      .row .column:nth-child(2) {
+        background-color: #bbb;
+      }
+      .row .column:nth-child(3) {
+        background-color: #ccc;
+      }
+      .row .column:nth-child(4) {
+        background-color: #ddd;
+      }
+
+      @media screen and (max-width: 992px) {
+        .row {
+          flex-wrap: wrap;
+        }
+        .row .column {
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .row .column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur enim, vitae debitis eos sapiente autem totam
+      vel quae? Beatae, inventore? Delectus aperiam aspernatur adipisci nostrum, perferendis dolorem alias, rem deserunt
+      fugiat fuga laborum placeat obcaecati! Qui, laboriosam eum? Facere assumenda laborum, minus at corrupti dolorum
+      accusantium aliquam cupiditate illo totam.
+    </p>
+    <div class="row">
+      <div class="column">
+        <h2>Column 1</h2>
+        <p>Some text...</p>
+      </div>
+      <div class="column">
+        <h2>Column 2</h2>
+        <p>Some text...</p>
+      </div>
+      <div class="column">
+        <h2>Column 3</h2>
+        <p>Some text...</p>
+      </div>
+      <div class="column">
+        <h2>Column 4</h2>
+        <p>Some text...</p>
+      </div>
+    </div>
+  </body>
+</html>
