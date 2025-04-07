@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let score_k = Number(prompt("국어 점수를 입력하세요"));
+      let score_e = Number(prompt("영어 점수를 입력하세요"));
+      let score_m = Number(prompt("수학 점수를 입력하세요"));
+      let total_score = (score_e + score_k + score_m) / 3;
+      //   if (total_score >= 90) {
+      //     document.write("<p>A 등급</p>");
+      //   } else if (total_score >= 80) {
+      //     document.write("<p>B 등급</p>");
+      //   } else if (total_score >= 70) {
+      //     document.write("<p>C 등급</p>");
+      //   } else if (total_score >= 60) {
+      //     document.write("<p>D 등급</p>");
+      //   } else if (total_score < 60) {
+      //     document.write("<p>F 등급</p>");
+      //   }
+      switch (parseInt(total_score / 10)) {
+        case 6:
+          document.write("<p>D 등급</p>");
+          break;
+        case 7:
+          document.write("<p>C 등급</p>");
+          break;
+        case 8:
+          document.write("<p>B 등급</p>");
+          break;
+        case 9:
+          document.write("<p>A 등급</p>");
+          break;
+        default:
+          document.write("<p>F 등급</p>");
+          break;
+      }
+    </script>
+  </body>
+</html>

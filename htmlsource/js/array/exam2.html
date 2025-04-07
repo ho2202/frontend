@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exam</title>
+  </head>
+  <body>
+    <script>
+      const input = prompt("행성 이름 입력");
+      const plant = new Array("수성", "금성", "지구", "화성", "목성", "토성", "천왕성");
+      const plantEng = ["Mercury", "Venus", "Earth", "mars", "jupiter", "saturn", "uranus", "neptune"];
+      const index = plant.indexOf(input);
+      document.write(`${plant[index]}의 영문명: ${plantEng[index]}<br>`);
+    </script>
+  </body>
+</html>
