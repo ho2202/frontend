@@ -47,12 +47,10 @@ myFunc(9);
 // 공인중개사 시험점수 입력하면 합격 여부를 알려줌 과목은 2개, 합해서 120 이상이면 합격, 한 과목이 40 이하면 불합격
 const gongin = function (x, y) {
   const sum = x + y;
-  if (x < 40 || y < 40) {
+  if (x < 40 || y < 40 || sum < 120) {
     console.log("불합격");
   } else {
-    if (sum > 120) {
-      console.log("합격");
-    }
+    console.log("합격");
   }
 };
 gongin(40, 100);

@@ -12,7 +12,7 @@ for (const num of numArr) {
     }
   }
 }
-console.log(`최댓값 : ${max}, 최솟값: ${min}`);
+console.log(`최댓값 : ${max}, 최솟값 : ${min}`);
 
 max = numArr[0];
 min = numArr[0];
@@ -26,4 +26,4 @@ numArr.forEach((num) => {
     }
   }
 });
-console.log(`최댓값 : ${max}, 최솟값: ${min}`);
+console.log(`최댓값 : ${max}, 최솟값 : ${min}`);

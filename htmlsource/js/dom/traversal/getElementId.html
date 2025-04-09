@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header1"><i>Header 1</i></h1>
+    <h2 id="header2">Header 2</h2>
+    <form action="" method="get" class="form">
+      <div>
+        <input type="text" name="username" id="username" />
+        <button type="button">확인</button>
+      </div>
+    </form>
+    <script>
+      let h1 = document.getElementById("header1");
+      console.log(h1);
+      let username = document.getElementById("username");
+      console.log(username);
+      console.log(h1.textContent);
+      //   h1.textContent = "Change H1";
+      h1.innerHTML = "<i>Change H1</i>";
+      console.log(h1.id);
+      const btn = document.getElementsByTagName("button");
+      console.log(btn);
+
+      h1 = document.querySelector("#header1");
+      btn = document.querySelector("button");
+      let form = document.querySelector(".form");
+    </script>
+  </body>
+</html>

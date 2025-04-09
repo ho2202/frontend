@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Hello</p>
+    <ul>
+      <li>항목</li>
+    </ul>
+    <div>Bye</div>
+    <script>
+      // for (let index = 0; index < document.body.childNodes; index++) {
+      //   console.log(document.body.childNodes[index]);
+      // }
+      // console.log("parentNode", document.body.parentNode);
+      // console.log("firstChild", document.body.firstChild);
+      // console.log("lastChild", document.body.lastChild);
+      // console.log("nextSibling", document.body.nextSibling);
+
+      for (let index = 0; index < document.body.children; index++) {
+        // console.log(document.body.children[index]);
+      }
+      for (const el of document.body.children) {
+        console.log(el);
+      }
+      console.log("parentNode", document.body.parentElement);
+      console.log("firstChild", document.body.firstElementChild);
+      console.log("lastChild", document.body.lastElementChild);
+      console.log("nextSibling", document.body.nextElementSibling);
+    </script>
+  </body>
+</html>
