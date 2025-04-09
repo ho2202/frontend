@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="p1">This is a paragraph.</p>
+    <button type="button">요소 숨김</button>
+    <button type="button">요소 보이기</button>
+    <script>
+      // display : none , block
+      // visibility : hidden, visible
+      const p = document.querySelector("#p1");
+      const btns = document.querySelectorAll("button");
+      btns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          if (btn.textContent === "요소 숨김") {
+            p.style.visibility = "hidden";
+          } else {
+            p.style.visibility = "visible";
+          }
+        });
+      });
+      //   btns[0].addEventListener("click", () => (p.style.display = "none"));
+      //   btns[1].addEventListener("click", () => (p.style.display = "block"));
+      //   btns[0].addEventListener("click", () => (p.style.visibility = "hidden"));
+      //   btns[1].addEventListener("click", () => (p.style.visibility = "visible"));
+    </script>
+  </body>
+</html>

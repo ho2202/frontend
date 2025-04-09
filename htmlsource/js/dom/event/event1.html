@@ -7,8 +7,30 @@
   </head>
   <body>
     <h1 onclick="console.log('header클릭');">header</h1>
+    <h2>header</h2>
+    <div>
+      <a href="https://www.naver.com">네이버</a>
+    </div>
+    <button type="button">클릭1</button>
+    <button type="button">클릭2</button>
     <script>
       // 이벤트 핸들러, 이벤트 리스너
+      // const btn1 = document.querySelector("button");
+      // const btn2 = document.querySelector("button:last-of-type");
+      // const btn2 = document.querySelector("body button:nth-child(2)");
+      const btns = document.querySelectorAll("button");
+      const hello1 = () => alert("안녕하세요");
+      const hello2 = () => alert("안녕하세요, 홍길동님");
+
+      btns[0].addEventListener("click", hello1);
+      btns[1].addEventListener("click", hello2);
+
+      // h2 클릭시 텍스트 변경
+      document.querySelector("h2").addEventListener("click", (e) => (e.target.textContent = "Good job!"));
+      document.querySelector("a").addEventListener("click", (e) => {
+        e.preventDefault();
+        console.log(e.target.textContent);
+      });
     </script>
   </body>
 </html>

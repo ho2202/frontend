@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>click</title>
+  </head>
+  <body>
+    <div>
+      <button type="button">Turn on the light</button>
+      <img src="../../../images/pic_bulboff.gif" alt="light" />
+      <button type="button">Turn off the light</button>
+    </div>
+    <script>
+      const img = document.querySelector("img");
+      //   const btns = document.querySelectorAll("button");
+      //   btns[0].addEventListener("click", (e) => (img.src = "../../../images/pic_bulbon.gif"));
+      //   btns[1].addEventListener("click", (e) => (img.src = "../../../images/pic_bulboff.gif"));
+      document.querySelector("div").addEventListener("click", (e) => {
+        if (e.target.textContent.includes("Turn on")) {
+          img.src = "../../../images/pic_bulbon.gif";
+        } else {
+          img.src = "../../../images/pic_bulboff.gif";
+        }
+      });
+    </script>
+  </body>
+</html>

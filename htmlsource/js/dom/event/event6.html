@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>click</title>
+  </head>
+  <body>
+    <div>
+      <img src="../../../images/pic_bulboff.gif" alt="light" />
+    </div>
+    <script>
+      const img = document.querySelector("img");
+      let mode = false; // 켜져있는지 확인하는 용도
+
+      img.addEventListener("click", () => {
+        if (img.src.includes("bulboff")) {
+          img.src = "../../../images/pic_bulbon.gif";
+          mode = true;
+        } else {
+          img.src = "../../../images/pic_bulboff.gif";
+          mode = false;
+        }
+      });
+    </script>
+  </body>
+</html>
