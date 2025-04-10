@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+ul.list{
+    border-bottom: 1px solid #ccc;
+    /* 블릿 기호 없애기 */
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.tab-button{
+    padding: 10px 20px;
+    /* 옆으로 배치, 글사 회색, 손모양 */
+    color: gray;
+    cursor: pointer;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+.orange{
+    border-top: 2px solid orange;
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid white;
+    border-left: 2px solid #ccc;
+    color:black;
+    margin-top: -2px;
+}
+.tab-content{
+    display: none;
+}
+.show{
+    display: block;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 4000px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      window.addEventListener("scroll", () => {
+        console.log(window.scrollY); // 위치 값 가져오기
+        window.scrollTo(0, 200); // 강제 이동 시키기
+        window.scrollBy(0, 100); // 상대 위치 이동
+      });
+    </script>
+  </body>
+</html>

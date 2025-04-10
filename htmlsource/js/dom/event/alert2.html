@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <style>
+      .alert-box {
+        background: skyblue;
+        padding: 20px;
+        color: white;
+        border-radius: 5px;
+        margin: 10px;
+        position: relative;
+      }
+      button {
+        border: 0;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgb(54, 62, 228);
+        color: white;
+      }
+      .hidden {
+        display: none;
+      }
+      .close {
+        position: absolute;
+        right: 1%;
+        top: 1%;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="alert-box hidden">
+      알림창
+      <span class="close">X</span>
+    </div>
+    <button class="show">알림창 보여주기</button>
+    <script>
+      document.querySelector(".close").addEventListener("click", () => {
+        document.querySelector(".alert-box").classList.add("hidden");
+      });
+      document.querySelector(".show").addEventListener("click", () => {
+        document.querySelector(".alert-box").classList.remove("hidden");
+      });
+    </script>
+  </body>
+</html>

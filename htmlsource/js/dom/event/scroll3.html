@@ -11,8 +11,17 @@
       crossorigin="anonymous"
     />
     <style>
-      span {
-        cursor: pointer;
+      body {
+        height: 4000px;
+      }
+      .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 4;
+      }
+      .navbar-brand {
+        font-size: 45px;
+        transition: all 1s;
       }
     </style>
   </head>
@@ -25,16 +34,33 @@
     </nav>
     123
     <script>
-      // bg-dark, color: white
+      // 스크롤 바를 내리면 상단의 글자가 작아지는 이벤트
+      window.addEventListener("scroll", () => {
+        console.log("스크롤 위치 ", window.scrollY);
+        console.log("브라우저 viewport 높이 ", window.innerHeight);
+        console.log("브라우저 전체 창 높이 ", window.outerHeight);
+        if (window.innerHeight / 2 < window.scrollY) {
+          document.querySelector(".navbar-brand").style.fontSize = "20px";
+        } else {
+          document.querySelector(".navbar-brand").style.fontSize = "40px";
+        }
+      });
+
       let mode = false;
       const badge = document.querySelector(".badge");
       badge.addEventListener("click", (e) => {
         document.body.classList.toggle("bg-dark");
         if (mode) {
           document.body.style.color = "black";
+          e.target.classList.replace("bg-warning", "bg-dark");
+          e.target.style.color = "white";
+          e.target.textContent = "Dark 🔄";
           mode = false;
         } else {
           document.body.style.color = "white";
+          e.target.classList.replace("bg-dark", "bg-warning");
+          e.target.style.color = "black";
+          e.target.textContent = "Light 🔄";
           mode = true;
         }
       });
