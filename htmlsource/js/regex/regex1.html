@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="exec"></p>
+    <script>
+      /*
+      regexp 메소드
+      exec()
+      test()
+      string 메소드
+      match()
+search()
+replace()
+split()*/
+      let origin = "Javascript JQuery Ajax";
+      const regex = new RegExp("Ajax");
+
+      console.log(regex.exec(origin)); // 일치하는 문자열을 반환하지만, 스크립트에서 인덱스, 그룹, 입력도 반환, match와 같은 개념
+      console.log(regex.test(origin)); // 패턴 일치 여부 반환
+      document.querySelector("#exec").textContent = regex.exec(origin);
+      // 묶어서 사용하기
+      const replace = /(\w+)\s(\w+)/;
+      origin = "John Smith";
+      const newName = origin.replace(replace, "$2 $1");
+      console.log(newName); // Smith John
+
+      const ko = "kokokoko";
+      console.log("ko match", ko.match(/(ko)+/));
+    </script>
+  </body>
+</html>
